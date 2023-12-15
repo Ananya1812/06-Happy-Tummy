@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f172b;
+}
+.header {
+  color: #fea116;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #0f172b;
+  font-family: "Nunito Sans", sans-serif;
+  border-bottom: 1px solid #fea116;
+}
+.first-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+#logo {
+  font-size: 30px;
+  margin: 10px;
+  font-weight: bolder;
+  margin-left: 40px;
+}
+.search-container {
+  position: relative;
+  margin: 10px;
+  margin-right: 80px;
+}
+.search-container input[type="text"]::placeholder {
+  color: #0f172b;
+  letter-spacing: 1px;
+}
+.search-container input[type="text"] {
+  padding-left: 50px;
+  height: 35px;
+  width: 300px;
+  background-color: #fea116;
+  border-radius: 20px;
+  border: none;
+}
+
+.search-container .fas {
+  position: absolute;
+  left: 10px;
+  top: 18px;
+  transform: translateY(-50%);
+  color: #4e2804;
+}
+
+/* Random generator of recipes */
+.random-generator {
+  display: flex;
+  align-items: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #0f172bed;
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.effect {
+  display: flex;
+  flex-direction: column;
+}
+.fa-circle-info {
+  color: #fea116;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 8px;
+  text-transform: lowercase;
+  padding: 10px;
+}
+.recipe-card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: -10%;
+  bottom: -10%;
+  left: -10%;
+  right: -10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.recipe-card:hover .overlay {
+  opacity: 1;
+}
+
+.meal-image {
+  width: 550px;
+  height: 350px;
+  display: block;
+  margin: auto;
+  border: 4px solid #fea116;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.recipe-card:hover .meal-image {
+  animation: zoomIn 0.5s forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Style for the popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  font-size: 11px;
+  color: #0f172b;
+}
+
+.popup.show {
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+}
+
+.source-link {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+#sub-text {
+  font-size: 18px;
+  color: white;
+  height: 110px;
+}
+h1 {
+  color: #fea116;
+  font-size: 45px;
+}
+.meal-name {
+  color: white;
+  text-align: center;
+}
+.view-recipe-btn {
+  padding: 3px;
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+  background-color: #fea116;
+  color: #0f172b;
+  border: none;
+  border-radius: 0px 10px 0px 10px;
+}
+.popup-meal-name {
+  color: #fea116;
+}
+.ingredients-list,
+.meal-instructions {
+  color: #0f172b;
+}
+
+/* Styles for results container  */
+.results-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.meal {
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid #0f172b;
+  background-color: #f8b475;
+  color: #0f172b;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Added transition property */
+  overflow: hidden; /* Prevents image overflow when zooming */
+}
+
+.meal img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out; /* Added transition property */
+}
+
+.meal:hover {
+  transform: scale(1.05); /* Scale the meal div on hover */
+}
+
+.meal:hover img {
+  transform: scale(1.05); /* Scale the image within meal div on hover */
+}
+
+.recipe-button {
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #fea116;
+  color: #0f172b;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+}
+
+.recipe-button:hover {
+  background-color: #0f172b;
+  color: #fea116;
+}
+
+/* Styles for the showup */
+.showup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.showup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%;
+  text-align: left;
+  font-size: 12px;
+  color: #0f172b;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* footer section */
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  border-top: 1px solid #fea116;
+}
+h2 {
+  color: #fea116;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 10px 0px 10px 0px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.li {
+  color: white;
+  padding: 4px;
+  list-style: square;
+  transition: transform 0.2s ease-in-out;
+}
+.li:hover {
+  transform: scale(1.1);
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+}
+.contact p {
+  transition: transform 0.2s ease-in-out;
+}
+.contact p:hover {
+  transform: scale(1.1);
+}
+i {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.copyright1 {
+  display: flex;
+  height: 60px;
+  border-top: 0.1px solid #fea116;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.copy,
+.footer-menu,
+a {
+  text-decoration: none;
+  color: #fea116;
+}
+.footer-menu {
+  width: 250px;
+  display: flex;
+  padding: 5px;
+}
+a {
+  padding: 5px;
+}
+h4 {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+
+
+

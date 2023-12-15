@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍴Happy Tummy</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section with search bar -->
+    <div class="header">
+      <div class="first-head">
+        <div id="logo"><i class="fa-solid fa-utensils"></i> Happy Tummy</div>
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Search your dish or ingredients"
+            onkeypress="handleKeyPress(event)"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- random generator of photos/recipe along with text side by side  -->
+    <div class="random-generator">
+      <div class="effect">
+        <div class="info">
+          <i class="fa-solid fa-circle-info">
+            Click on the image to get recipe</i
+          >
+        </div>
+        <!-- random generator -->
+        <div class="recipe-card">
+          <img src="" alt="" class="meal-image" />
+          <div class="overlay">
+            <h2 class="meal-name"></h2>
+            <button class="view-recipe-btn">View Recipe</button>
+            <div class="popup">
+              <span class="close-btn">&times;</span>
+              <h2 class="popup-meal-name"></h2>
+              <ul class="ingredients-list"></ul>
+              <br />
+              <p class="meal-instructions"></p>
+              <a href="#" class="source-link">Source</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- information about website -->
+      <div class="text">
+        <h1>
+          Enjoy Your Meal with<br />
+          Some Lipsmacking recipe
+        </h1>
+        <p id="sub-text">
+          Embark on a flavor-filled adventure at Happy Tummy's recipe haven!<br />
+          Explore a vast array of tastes, uncovering tailored dishes that match
+          your unique<br />
+          preferences. From beloved classics to exotic inspirations, discover
+          your <br />perfect recipe match with ease.Let your culinary journey
+          begin with just a click!
+        </p>
+      </div>
+    </div>
+    <!-- results of searched items (opens only on search)-->
+    <div class="results-container" id="results"></div>
+    <div class="showup" id="showup">
+      <div class="showup-content" id="showup-content">
+        <span class="close" onclick="closeshowup()">&times;</span>
+        <h2 id="showup-meal-name"></h2>
+        <div id="showup-recipe"></div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer">
+      <div class="company">
+        <h2>Company___</h2>
+        <ul>
+          <li class="li">About Us</li>
+          <li class="li">Contact Us</li>
+          <li class="li">Privacy Policy</li>
+          <li class="li">Terma & Conditions</li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <h2>Contact___</h2>
+        <ul>
+          <p><i class="fa-solid fa-location-dot"></i> Bengaluru,India</p>
+          <p><i class="fa-solid fa-phone"></i> +91 94809 70467</p>
+          <p><i class="fa-solid fa-envelope"></i> happytummy@gmail.com</p>
+          <p><i class="fa-brands fa-instagram"></i> _happie_tummy_</p>
+        </ul>
+      </div>
+
+      <!-- copy right footer section -->
+    </div>
+
+    <div class="copyright">
+      <div class="copyright1">
+        <div class="copy">
+          © <a class="border-bottom" href="#">AK</a> | All Right Reserved.
+        </div>
+
+        <div class="copyright2">
+          <div class="footer-menu">
+            <a href="">Home</a>
+            <a href="">Cookies</a>
+            <a href="">Help</a>
+            <a href="">FQAs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
