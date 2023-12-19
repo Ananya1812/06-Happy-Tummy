@@ -4,17 +4,17 @@ Developing the website mirrored the complexities of coding a comples website, re
 
 -----DESIGN FOR DEVELOPERS--------
 
-🔘FIGMA PAGE LINK
-Desktop : https://www.figma.com/file/SNtc7yODyUI31XSN1o7ztt/Front-End-CA-2?type=design&node-id=4%3A2&mode=design&t=G9hBOum7IB1FlhgY-1 (page 1)
-Mobile: https://www.figma.com/file/SNtc7yODyUI31XSN1o7ztt/Front-End-CA-2?type=design&node-id=23%3A443&mode=design&t=G9hBOum7IB1FlhgY-1 (page 2)
+🔘FIGMA PAGE LINK                  
+Desktop : https://www.figma.com/file/SNtc7yODyUI31XSN1o7ztt/Front-End-CA-2?type=design&node-id=4%3A2&mode=design&t=G9hBOum7IB1FlhgY-1 (page 1)               
+Mobile: https://www.figma.com/file/SNtc7yODyUI31XSN1o7ztt/Front-End-CA-2?type=design&node-id=23%3A443&mode=design&t=G9hBOum7IB1FlhgY-1 (page 2)          
 
 🔘FIGMA PROTOTYPE
-Desktop: https://www.figma.com/proto/SNtc7yODyUI31XSN1o7ztt/Front-End-CA-2?page-id=0%3A1&type=design&node-id=4-2&viewport=569%2C147%2C0.21&t=PokJkTgxcCp4fKNa-1&scaling=scale-down&starting-point-node-id=4%3A2&mode=design
-Mobile:https://www.figma.com/proto/SNtc7yODyUI31XSN1o7ztt/Front-End-CA-2?page-id=22%3A441&type=design&node-id=23-443&viewport=518%2C174%2C0.2&t=6lWvGSCq0MJIYlQi-1&scaling=scale-down&mode=design
+Desktop: https://www.figma.com/proto/SNtc7yODyUI31XSN1o7ztt/Front-End-CA-2?page-id=0%3A1&type=design&node-id=4-2&viewport=569%2C147%2C0.21&t=PokJkTgxcCp4fKNa-1&scaling=scale-down&starting-point-node-id=4%3A2&mode=design                    
+Mobile:https://www.figma.com/proto/SNtc7yODyUI31XSN1o7ztt/Front-End-CA-2?page-id=22%3A441&type=design&node-id=23-443&viewport=518%2C174%2C0.2&t=6lWvGSCq0MJIYlQi-1&scaling=scale-down&mode=design               
 
-🔘LOOM VIDEO LINK(Walk Through)
-https://www.loom.com/share/ddd0531124e64c66a2084676f01ba1f5
-https://www.loom.com/share/a506104cb2ac4768866645dd9a6e045c
+🔘LOOM VIDEO LINK(Walk Through)                    
+https://www.loom.com/share/ddd0531124e64c66a2084676f01ba1f5                 
+https://www.loom.com/share/a506104cb2ac4768866645dd9a6e045c                   
 
 -----FEWD-----
 
